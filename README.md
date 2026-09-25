@@ -1,31 +1,53 @@
-# Ian's Personal Website
+# Ian Gicheha Mbae - Personal Website
 
-This is a minimal Next.js + TypeScript + Tailwind scaffold for Ian's personal website.
+A modern, responsive, and highly interactive personal portfolio website built with Next.js, TypeScript, and Tailwind CSS. This repository serves as the digital home for Ian Gicheha Mbae (Dr-Rank1), showcasing projects, skills, and blog posts.
 
-Getting started (PowerShell on Windows):
+## Features
 
-```powershell
-npm install
-npm run dev
-```
+- **Next.js & TypeScript:** Built with Next.js for server-side rendering and static site generation, utilizing TypeScript for type safety and excellent developer experience.
+- **Tailwind CSS Styling:** Fully styled using Tailwind CSS, ensuring a responsive, utility-first design approach.
+- **MDX Blog Integration:** Supports rich content creation using MDX, allowing the embedding of React components directly within markdown files.
+- **Interactive UI Components:** Features a variety of engaging components including Particle Backgrounds, Custom Cursors, Page Transitions, Magnetic Buttons, and a Lightbox.
+- **Dark/Light Theme:** Built-in theme context for seamless switching between dark and light modes.
+- **SEO Optimized:** Includes dedicated SEO components to ensure high visibility and standard meta tags.
 
-Open http://localhost:3000 in a browser after the dev server starts.
+## Project Structure
 
-Next steps:
-- Replace placeholder content in `src/pages` and `src/components`.
-- Add images into `public/` (e.g., `public/avatar.png`).
-- Configure deployment (Vercel recommended).
+- `src/pages/`: Contains the application routes (Home, About, Projects, Blog, Contact).
+- `src/components/`: Reusable React components (Navbar, Footer, Hero, ProjectCard, etc).
+- `src/styles/`: Global stylesheets and Tailwind configurations.
+- `src/lib/`: Utility functions, including MDX parsing logic.
+- `src/contexts/`: React context providers (e.g., ThemeContext).
+- `posts/`: Markdown files for the blog.
+- `public/`: Static assets such as images and fonts.
 
-MDX blog (optional)
---------------------
+## Local Development
 
-This project includes a `posts/` folder with an MDX stub (`posts/sample-post.mdx`) and pages that can render MDX content using `next-mdx-remote`.
+To run this project locally on your machine, follow these steps:
 
-To enable and test MDX rendering locally, install the MDX-related packages and then run the dev server:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Dr-Rank1/personal-website.git
+   cd personal-website
+   ```
 
-```powershell
-npm install next-mdx-remote gray-matter
-npm run dev
-```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-The dynamic blog post page at `/blog/[slug]` will read MDX files from `posts/` and render them. If you want syntax highlighting or extra remark/rehype plugins, add them and update the MDX serialize options in `src/pages/blog/[slug].tsx`.
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **View the site:**
+   Open http://localhost:3000 in your browser.
+
+## Deployment
+
+The easiest way to deploy your Next.js app is to use the Vercel Platform from the creators of Next.js. Simply import the repository into Vercel, and it will automatically build and deploy.
+
+## Credits
+
+Designed and developed by **Ian Gicheha Mbae** (Dr-Rank1).
