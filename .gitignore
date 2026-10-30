@@ -5,3 +5,12 @@ node_modules
 .DS_Store
 .vscode
 nul
+
+# AI tooling
+.claude/
+.cursor/
+.cursorrules
+.cursorignore
+.kilo/
+.gemini/
+CLAUDE.md
